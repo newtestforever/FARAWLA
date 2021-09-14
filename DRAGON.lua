@@ -64,7 +64,7 @@ token = database:get(id_server..":token"),
 SUDO = database:get(id_server..":SUDO:ID"),
 UserName = database:get(id_server..":SUDO:USERNAME"),
  }
-create(config, "./madisooon.lua")   
+create(config, "./madison.lua")   
 end 
 create_config_auto()
 token = database:get(id_server..":token")
@@ -1119,7 +1119,7 @@ if text == 'مالك السورس' or text == 'المبرمج بويكا' or tex
 local Text =[[
 
 
-للتواصل مع عبدو مبرمج السورس
+للتواصل مع بويكا مبرمج السورس
 اتبع الازرار الاتيه♦️
 
 
@@ -1198,7 +1198,7 @@ keyboard.inline_keyboard = {
 },
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/so_alfaa&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/frawla2021&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'بوت تواصل' or text == 'بوت تواصل' or text == 'بوت تواصل' or text == '"' then
 local Text =[[
@@ -1208,14 +1208,14 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '❨ 𝐓𝐖𝐀𝐒𝐎𝐋 ♬  ❩' , url = "https://t.me/boyka03_bot"},
+{text = '❨ 𝐓𝐖𝐀𝐒𝐎𝐋 ♬  ❩' , url = "https://t.me/T_frawla_bot"},
 },
 {
 {text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈', url = "https://t.me/frawla2021"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/boyka03_bot&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/T_frawla_bot&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == "ضع اسم للبوت" and DevSoFi(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
@@ -2771,11 +2771,6 @@ end
 end,nil)   
 end
 
-if text == 'تيست' or text == 'اختبار' or text == 'الاختبار' then
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendAudio?chat_id=' .. msg.chat_id_ .. '&audio=https://t.me/LAAHT/5&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'سورس' then 
 local Text = [[ 
 ╭──── ● ☆ ● ────╮
@@ -2820,7 +2815,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ha_rr_y_ha_ma&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'ماديسون' or text == 'المبرمج ماديسون' or text == 'ماديسون مبرمج السورس' or text == 'مبرمج السورس' then
+if text == 'ماديسون' or text == 'المبرمج ماديسون' or text == 'ماديسون مبرمج السورس' or text == 'الهقر' then
 local Text =[[
 
 
@@ -2842,7 +2837,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AAHMEED11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'تاكي' or text == 'الشيخ تاكي' or text == 'تاكي مبرمج السورس' or text == 'المبرمج تاكي' then
+if text == 'تاكي' or text == 'الشيخ تاكي' or text == 'تاكي مبرمج السورس' or text == 'مبرمج السورس' then
 local Text =[[
 
 
@@ -6921,6 +6916,11 @@ end,nil)
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
+end
+
+if text == 'اغيه' or text == 'اغاني' or text == 'الاغنيه' or text == 'اغنيتي' then
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendAudio?chat_id=' .. msg.chat_id_ .. '&audio=https://t.me/LAAHT/5&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 -----------------------------------------------------
 if text == 'مسح القرده' and Mod(msg) then
@@ -12485,7 +12485,7 @@ local List = {
 ➼ : 𝐼𝐷 𖠀 #id . ♡
 ➼ : 𝑈𝑆𝐸𝑅 𖠀 #username .♡
 ➼ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .♡
-➼ : 𝑆??𝐴S𝑇 𖠀 #stast .♡ 
+➼ : 𝑆????S𝑇 𖠀 #stast .♡ 
 ➼ : 𝐸𝐷𝐼𝑇  𖠀 #edit .♡
 ➼ : 𝗖𝗛 - @frawla2021 ♬.
 ]],
